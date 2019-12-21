@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="game.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">    <title style="font-weight: bolder;">git details</title>
+</head>
+<body style = "background-image:url(./pok.jpg)"> 
+    <div class="card text-white randi ml-5 mt-5 p0" style="float:left;width: 18rem;background-color: black;">
+        <div class="card-body">
+          <img src="randi1.jpg">
+          <h5 class="text-center" id="score0" style="background-color: cornsilk;color:black"><span>SCORE:0</span></h5>
+          <h5 class="text-center" id="bet0" style="background-color: cornsilk;color:black">BET:</h5>
+          <h5 class="text-center" id="amount0" style="background-color: cornsilk;color:black">AMOUNT:</h5>
+          <h5 id="z1" class="card-title text-center" style="font-family: cursive;">PLAYER 1</h5>
+          <!-- <a href="#" class="btn btn-primary drawbutton3" style="width: 40%;margin-right:10px;">DRAW</a>
+          <a href="#" class="btn btn-danger holdbutton" style="width: 40%;margin-left: 10px;">HOLD</a> -->
+
+          
+        </div>
+      </div>
+    
+    <br><br>
+  <div class="card text-white randi dealer" style="float:left;width: 18rem;background-color: rgb(255, 145, 0);align-content: center;margin-left: 24%;border-radius: 670%;margin-bottom:30px;margin-top: 0;border-color: black;">
+      <div class="card-body">
+        <img src="Poker-Dealer-button-1_2048x.webp" style="align-content: center;margin-left:35%;">
+        <h5 class="text-center" id="score5" style="background-color: cornsilk;color:black">SCORE:0</h5>
+        <h5 class="card-title text-center" style="font-family:fantasy;color: black;font-weight: bolder">DEALER</h5>
+        <!-- <a href="#" class="btn btn-primary drawbutton0" style="width: 40%;margin-right:10px;">DRAW</a>
+        <a href="#" class="btn btn-danger holdbutton0" style="width: 40%;margin-left: 10px;">HOLD</a> -->
+
+        
+      </div>
+    </div>
+    <div class="card text-white bg- randi mr-5 p1" style="float:right;width: 18rem;background-color: black;">
+      <div class="card-body">
+        <img src="randi2.jpg">
+        <h5 class="text-center" id="score1" style="background-color: cornsilk;color:black">SCORE:0</h5>
+        <h5 class="text-center" id="bet1" style="background-color: cornsilk;color:black">BET:</h5>
+        <h5 class="text-center" id="amount1" style="background-color: cornsilk;color:black">AMOUNT: </h5>
+        <h5 id="z2" class="card-title text-center" style="font-family: cursive;">PLAYER 2</h5>
+        <!-- <a href="#" class="btn btn-primary drawbutton1" style="width: 40%;margin-right:10px;">DRAW</a>
+        <a href="#" class="btn btn-danger holdbutton1" style="width: 40%;margin-left: 10px;">HOLD</a> -->
+        
+      </div>
+ 
+    </div>
+              <div class="card" id="table" style="border-radius: 30ex;width:80%;opacity:60%;color: rgb(253, 242, 242);background-color: rgb(255, 0, 0);border-color: gold; border-width: 10px ;margin: 0 9%; float: left;">
+                <div class="card-body main__title"id="q" style="text-align: center;">
+                  <div id="w">
+                    <div style="margin: 20%;"></div>
+                  </div>    
+                  </div>
+              </div>
+              
+        
+              <div class="card text-white randi ml-5 p3" style="float:left;width: 18rem;background-color: black;">
+                <div class="card-body">
+                  <img src="randi3.jpg">
+                  <h5 class="text-center" id="score3" style="background-color: cornsilk;color:black"><span>SCORE:0</span></h5>
+                  <h5 class="text-center" id="bet3" style="background-color: cornsilk;color:black">BET:</h5>
+                  <h5 class="text-center" id="amount3" style="background-color: cornsilk;color:black">AMOUNT: </h5>
+                  <h5 id= "z4" class="card-title text-center" style="font-family: cursive;">PLAYER 4</h5>
+                  <!-- <a href="#" class="btn btn-primary drawbutton3" style="width: 40%;margin-right:10px;">DRAW</a>
+                  <a href="#" class="btn btn-danger holdbutton" style="width: 40%;margin-left: 10px;">HOLD</a> -->
+
+                  
+                </div>
+              </div>
+              <div class="card text-white randi mr-5 p2" style="float:right;width: 18rem;background-color: black;">
+                <div class="card-body">
+                  <img src="randi4.jpg">
+                  <h5 class="text-center" id="score2" style="background-color: cornsilk;color:black">SCORE:0</h5>
+                  <h5 class="text-center" id="bet2" style="background-color: cornsilk;color:black">BET:</h5>
+                  <h5 class="text-center" id="amount2" style="background-color: cornsilk;color:black">AMOUNT: </h5>
+                  <h5 id="z3" class="card-title text-center" style="font-family: cursive;">PLAYER 3</h5>
+                  <!-- <a href="#" class="btn btn-primary drawbutton2" style="width: 40%;margin-right:10px;">DRAW</a>
+                  <a href="#" class="btn btn-danger holdbutton" style="width: 40%;margin-left: 10px;">HOLD</a> -->
+
+                  
+                </div>
+              </div> 
+               <button type="button" class="btn btn-outline-success align-center mr-5 mt-5 drawbutton" style="margin-left: 22%;width:8%;padding:2%;font-weight: bolder;">HIT!</button>
+              <button type="button" class="btn btn-outline-danger align-center ml-5 mt-5 holdbutton" style="float: center;width:8% ;padding: 2%;font-weight: bolder;">STAND</button>   
+            <div id="reload"></div>
+            <!--<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#staticBackdrop">
+              <h4 class="" style="font-family: cursive ;">Bets</h4>
+            </button>
+
+            <div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body" style="display: inline;">
+                    <input id="x0" type="text" class="form-control" placeholder=" Bet Amount" style="background: transparent; width:50% ; display: inline; float:left ;
+                    border: white; color:black; font-weight: bolder;font-size: larger; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                     <input id="x1" type="text" class="form-control" placeholder=" Bet Amount" style="background: transparent; width:50% ; display: inline; float:left ;
+                     border: white; color:black; font-weight: bolder;font-size: larger; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                      <input id="x2" type="text" class="form-control" placeholder=" Bet Amount" style="background: transparent; width:50% ; display: inline;float:right ;
+                      border: white; color:black; font-weight: bolder;font-size: larger; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                       <input id="x3" type="text" class="form-control" placeholder=" Bet Amount" style="background: transparent; width:50% ; display: inline;float:right ;
+                       border: white; color:black; font-weight: bolder;font-size: larger; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                </div>
+                <div class="modal-footer">
+                  <button type="submit" class="btn btn-secondary" data-dismiss="modal">Submit</button> -->
+                  
+                <!-- </div>
+              </div>
+            </div>
+          </div>
+            -->
+
+
+
+
+
+          </body>
+<script src="ekaurjs.js"></script>
+</html> 
